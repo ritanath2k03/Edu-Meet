@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4C5D70"
+    tools:context=".Teacher_verificatoin">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:text="I am a Teacher"
+
+        android:textColor="@color/black"
+        android:textSize="33dp"
+        android:textStyle="italic|bold"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.129"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.049" />
+
+    <EditText
+        android:id="@+id/reg_name"
+        android:layout_width="336dp"
+        android:layout_height="50dp"
+        android:background="@drawable/edittext_bar"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/black"
+        android:textSize="25dp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        app:layout_constraintVertical_bias="0.361" />
+
+    <EditText
+        android:id="@+id/reg_collegeBox"
+        android:layout_width="340dp"
+        android:layout_height="50dp"
+        android:background="@drawable/edittext_bar"
+        android:hint="School/College name"
+        android:inputType="text"
+        android:textColorHint="@color/black"
+        android:textSize="25dp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reg_name"
+        app:layout_constraintVertical_bias="0.094" />
+
+    <EditText
+        android:id="@+id/reg_idBox"
+        android:layout_width="348dp"
+        android:layout_height="50dp"
+        android:background="@drawable/edittext_bar"
+        android:hint="Teacher Id"
+        android:inputType="number"
+        android:textColorHint="@color/black"
+        android:textSize="25dp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.587"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reg_collegeBox"
+        app:layout_constraintVertical_bias="0.145" />
+
+    <EditText
+        android:id="@+id/reg_passwordBox"
+        android:layout_width="352dp"
+        android:layout_height="50dp"
+        android:hint="Password"
+        android:background="@drawable/edittext_bar"
+        android:textColorHint="@color/black"
+        android:textSize="25dp"
+        android:textStyle="bold|italic"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.559"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reg_idBox"
+        app:layout_constraintVertical_bias="0.156" />
+
+    <Button
+        android:id="@+id/reg_submit"
+        android:layout_width="145dp"
+        android:layout_height="57dp"
+        android:layout_marginBottom="44dp"
+        android:background="@drawable/lognin_style"
+        android:text="Submit"
+
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/teacher" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="30dp"
+    tools:context=".Signup_page"
+    android:background="#4C5D70">
+
+    <ScrollView
+        android:layout_width="295dp"
+        android:layout_height="720dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:padding="10dp"
+
+                android:text="Let's\nSignUp"
+                android:textColor="#B753C8"
+                android:textSize="60dp"
+                android:textStyle="bold|italic"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.072"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="80dp"
+                android:background="@drawable/edittext_bar"
+                android:hint="Name"
+                android:inputType="textPersonName"
+                android:paddingTop="3dp"
+                android:textColorHint="@color/black"
+                android:textSize="26dp"
+                android:textStyle="bold|italic"
+android:textColor="@color/black"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView3"
+                app:layout_constraintVertical_bias="0.201" />
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/edittext_bar"
+                android:hint="Email"
+                android:textColor="@color/black"
+                android:inputType="textEmailAddress"
+                android:textColorHint="@color/black"
+                android:textSize="26dp"
+                android:textStyle="bold|italic" />
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="30dp"
+                android:textColor="@color/black"
+                android:background="@drawable/edittext_bar"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:paddingTop="3dp"
+                android:textColorHint="@color/black"
+                android:textSize="26dp"
+                android:textStyle="bold|italic" />
+
+            <Button
+                android:id="@+id/loginBtn"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="30dp"
+                android:textColor="@color/black"
+                android:background="@drawable/lognin_style"
+                android:gravity="center"
+                android:text="Sign Up"
+                android:textSize="24dp"
+                android:textStyle="bold|italic" />
+
+            <Button
+                android:id="@+id/createBtn"
+                android:layout_width="290dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/signup_style"
+                android:text="Have an account"
+                android:textColor="@color/black"
+                android:textSize="24dp"
+                android:textStyle="bold|italic" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

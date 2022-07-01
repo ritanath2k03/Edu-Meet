@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Edu_meet/app/src/main/res/drawable/background_popup.xml" value="0.126" />
+        <entry key="..\:/Edu_meet/app/src/main/res/drawable/decision_button_style.xml" value="0.199" />
+        <entry key="..\:/Edu_meet/app/src/main/res/drawable/decision_button_style2.xml" value="0.199" />
+        <entry key="..\:/Edu_meet/app/src/main/res/layout/activity_attendance_popup.xml" value="0.22" />
+        <entry key="..\:/Edu_meet/app/src/main/res/layout/activity_calling_page.xml" value="0.20677083333333332" />
+        <entry key="..\:/Edu_meet/app/src/main/res/layout/activity_college.xml" value="0.20677083333333332" />
+        <entry key="..\:/Edu_meet/app/src/main/res/layout/activity_college_dashboard.xml" value="0.18" />
+        <entry key="..\:/Edu_meet/app/src/main/res/layout/activity_college_dashboard_main.xml" value="0.22" />
+        <entry key="..\:/Edu_meet/app/src/main/res/layout/activity_college_verification.xml" value="0.22" />
+        <entry key="..\:/Edu_meet/app/src/main/res/layout/activity_dashboard_page.xml" value="0.15" />
+        <entry key="..\:/Edu_meet/app/src/main/res/layout/activity_decision_page.xml" value="0.20677083333333332" />
+        <entry key="..\:/Edu_meet/app/src/main/res/layout/activity_login_page.xml" value="0.20677083333333332" />
+        <entry key="..\:/Edu_meet/app/src/main/res/layout/activity_main.xml" value="0.20677083333333332" />
+        <entry key="..\:/Edu_meet/app/src/main/res/layout/activity_registered_teacher_name.xml" value="0.20677083333333332" />
+        <entry key="..\:/Edu_meet/app/src/main/res/layout/activity_signup_page.xml" value="0.20677083333333332" />
+        <entry key="..\:/Edu_meet/app/src/main/res/layout/activity_student_dashboard.xml" value="0.22" />
+        <entry key="..\:/Edu_meet/app/src/main/res/layout/activity_student_list.xml" value="0.2" />
+        <entry key="..\:/Edu_meet/app/src/main/res/layout/activity_student_verification.xml" value="0.18" />
+        <entry key="..\:/Edu_meet/app/src/main/res/layout/activity_teacher_dashboard.xml" value="0.19114583333333332" />
+        <entry key="..\:/Edu_meet/app/src/main/res/layout/activity_teacher_registration.xml" value="0.20677083333333332" />
+        <entry key="..\:/Edu_meet/app/src/main/res/layout/activity_teacher_verificatoin.xml" value="0.22" />
+        <entry key="..\:/Edu_meet/app/src/main/res/layout/attendance_popup.xml" value="0.25" />
+        <entry key="..\:/Edu_meet/app/src/main/res/layout/attendence_student.xml" value="0.20677083333333332" />
+        <entry key="..\:/Edu_meet/app/src/main/res/layout/content_scrolling.xml" value="0.22" />
+        <entry key="..\:/Edu_meet/app/src/main/res/layout/each_view_holder.xml" value="0.33" />
+        <entry key="..\:/Edu_meet/app/src/main/res/layout/layout.xml" value="0.25" />
+        <entry key="..\:/Edu_meet/app/src/main/res/layout/student_list.xml" value="0.20677083333333332" />
+        <entry key="..\:/Edu_meet/app/src/main/res/layout/teacher_layout.xml" value="0.20677083333333332" />
+        <entry key="..\:/Users/Personal/Downloads/EDUMeet/app/src/main/res/layout/activity_calling_page.xml" value="0.2" />
+        <entry key="..\:/Users/Personal/Downloads/EDUMeet/app/src/main/res/layout/activity_dashboard_page.xml" value="0.25" />
+        <entry key="..\:/Users/Personal/Downloads/Edu_meet/app/src/main/res/drawable/decision_button_style.xml" value="0.2035" />
+        <entry key="..\:/Users/Personal/Downloads/Edu_meet/app/src/main/res/drawable/decision_button_style2.xml" value="0.2035" />
+        <entry key="..\:/Users/Personal/Downloads/Edu_meet/app/src/main/res/drawable/edittext_bar.xml" value="0.2035" />
+        <entry key="..\:/Users/Personal/Downloads/Edu_meet/app/src/main/res/layout/activity_calling_page.xml" value="0.25" />
+        <entry key="..\:/Users/Personal/Downloads/Edu_meet/app/src/main/res/layout/activity_dashboard_page.xml" value="0.2" />
+        <entry key="..\:/Users/Personal/Downloads/Edu_meet/app/src/main/res/layout/activity_decision_page.xml" value="0.20677083333333332" />
+        <entry key="..\:/Users/Personal/Downloads/Edu_meet/app/src/main/res/layout/activity_login_page.xml" value="0.20260416666666667" />
+        <entry key="..\:/Users/Personal/Downloads/Edu_meet/app/src/main/res/layout/activity_main.xml" value="0.20260416666666667" />
+        <entry key="..\:/Users/Personal/Downloads/Edu_meet/app/src/main/res/layout/activity_signup_page.xml" value="0.20260416666666667" />
+        <entry key="..\:/Users/Personal/Downloads/Edu_meet/app/src/main/res/layout/student_list.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/activity_calling_page.xml" value="0.12310030395136778" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4C5D70"
+    tools:context=".College_dashboard">
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="363dp"
+        android:layout_height="48dp"
+        android:background="@drawable/edittext_bar"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        android:paddingLeft="15dp"
+        android:textColorHint="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.083"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.546" />
+
+    <EditText
+        android:id="@+id/id"
+        android:layout_width="360dp"
+        android:layout_height="54dp"
+        android:background="@drawable/edittext_bar"
+        android:hint="Id"
+        android:inputType="number"
+        android:paddingLeft="15dp"
+        android:textColorHint="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.078"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name"
+        app:layout_constraintVertical_bias="0.113" />
+
+    <EditText
+        android:id="@+id/dob"
+        android:layout_width="363dp"
+        android:layout_height="48dp"
+        android:background="@drawable/edittext_bar"
+        android:hint="Date Of Birth"
+        android:inputType="date"
+        android:paddingLeft="15dp"
+        android:textColorHint="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.02"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id"
+        app:layout_constraintVertical_bias="0.172" />
+
+    <Button
+        android:id="@+id/Enter"
+        android:layout_width="158dp"
+        android:layout_height="48dp"
+        android:background="@drawable/lognin_style"
+        android:text="Enter "
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dob"
+        app:layout_constraintVertical_bias="0.203" />
+
+    <TextView
+        android:id="@+id/college_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.072"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.117" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="314dp"
+        android:layout_height="195dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.402"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/college_header"
+        app:layout_constraintVertical_bias="0.107"
+        app:srcCompat="@drawable/student1" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

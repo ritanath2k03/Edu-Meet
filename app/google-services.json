@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1089130119409",
+    "firebase_url": "https://rithserver-default-rtdb.firebaseio.com",
+    "project_id": "rithserver",
+    "storage_bucket": "rithserver.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1089130119409:android:6ed692094caa607be2e950",
+        "android_client_info": {
+          "package_name": "com.example.edumeet"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1089130119409-u783svukm78amlocm9813q81bg4h0d6a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCE-3i-6sFkTIW-neMkhUnwvVP855VCeYQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1089130119409-u783svukm78amlocm9813q81bg4h0d6a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

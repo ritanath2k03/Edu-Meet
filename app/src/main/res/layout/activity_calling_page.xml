@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4C5D70"
+    tools:context=".Calling_page">
+
+    <EditText
+        android:id="@+id/codeBox"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:hint="Give Class info"
+        android:textColor="#000000"
+        android:background="@drawable/edittext_bar"
+        android:textColorHint="#000000"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idBox"
+        app:layout_constraintVertical_bias="0.132" />
+
+    <EditText
+        android:id="@+id/schoolname_box"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:hint="School /College name"
+        android:textColor="#000000"
+        android:background="@drawable/edittext_bar"
+        android:inputType="textUri"
+        android:textColorHint="#000000"
+        android:textSize="22sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nameBox"
+        app:layout_constraintVertical_bias="0.08" />
+
+    <EditText
+        android:id="@+id/idBox"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="208dp"
+        android:background="@drawable/edittext_bar"
+        android:hint="Enter id"
+        android:inputType=""
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/schoolname_box" />
+
+    <EditText
+        android:id="@+id/nameBox"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:textStyle="bold|italic"
+        android:hint="Enter Name"
+        android:background="@drawable/edittext_bar"
+        android:inputType="textPersonName"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.415" />
+
+    <Button
+        android:id="@+id/meetBtn"
+        android:layout_width="198dp"
+        android:layout_height="60dp"
+        android:textSize="20dp"
+        android:background="@drawable/lognin_style"
+        android:text="Meet now"
+        android:textColor="#F6F6F6"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/codeBox"
+        app:layout_constraintVertical_bias="0.342" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="151dp"
+        android:layout_height="106dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.171"
+        app:srcCompat="@drawable/app_logo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

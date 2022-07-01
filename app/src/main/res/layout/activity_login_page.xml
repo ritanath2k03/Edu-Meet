@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:padding="30dp"
+    android:layout_height="match_parent"
+    android:background="#4C5D70"
+    tools:context=".Login_page">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="One Step \nConnect"
+        android:textColor="#B753C8"
+        android:textSize="60dp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Email"
+        android:textColor="#000000"
+        android:paddingLeft="10dp"
+        android:textStyle="bold|italic"
+        android:background="@drawable/edittext_bar"
+        android:layout_marginTop="80dp"
+
+android:textColorHint="@color/black"
+        android:paddingTop="3dp"
+        android:textSize="26dp"
+        android:inputType="textEmailAddress"
+
+        />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Password"
+        android:layout_marginTop="30dp"
+        android:textStyle="bold|italic"
+        android:paddingLeft="10dp"
+        android:paddingTop="3dp"
+        android:textColor="#000000"
+        android:textColorHint="@color/black"
+        android:background="@drawable/edittext_bar"
+        android:textSize="26dp"
+        android:inputType="textPassword"
+        />
+
+    <Button
+        android:id="@+id/loginBtn"
+        android:layout_width="213dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+
+        android:background="@drawable/lognin_style"
+        android:gravity="center"
+        android:text="Login"
+        android:textSize="24dp"
+        android:textStyle="bold|italic" />
+
+    <Button
+        android:id="@+id/createBtn"
+        android:layout_width="292dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/signup_style"
+        android:text="Create an account"
+        android:textSize="24dp"
+        android:textStyle="bold|italic" />
+</LinearLayout>

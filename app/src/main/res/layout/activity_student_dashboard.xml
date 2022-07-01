@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4C5D70"
+    tools:context=".Student_dashboard">
+
+    <TextView
+        android:id="@+id/Showname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.041" />
+
+    <EditText
+        android:id="@+id/Url"
+        android:layout_width="253dp"
+        android:layout_height="46dp"
+        android:hint="    Enter Class Info "
+        android:inputType="textUri"
+        android:textColorHint="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.046"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Showname"
+        app:layout_constraintVertical_bias="0.38" />
+
+    <Button
+        android:id="@+id/Join"
+        android:layout_width="95dp"
+        android:layout_height="48dp"
+        android:text="JOIN"
+        android:background="@drawable/lognin_style"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/Url"
+        app:layout_constraintTop_toBottomOf="@+id/Showname"
+        app:layout_constraintVertical_bias="0.378" />
+
+    <Button
+        android:id="@+id/CheckAttendance"
+        android:onClick="ShowPopup"
+        android:layout_width="247dp"
+        android:layout_height="74dp"
+        android:text="Check Attendance"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Url"
+
+        android:textColor="@color/black"
+        android:background="@drawable/signup_style"
+        android:textSize="20dp"
+        android:textStyle="bold|italic"
+        app:layout_constraintVertical_bias="0.084" />
+    <Button
+        android:id="@+id/ClassPerformation"
+        android:layout_width="247dp"
+        android:layout_height="74dp"
+        android:text="Class Performance"
+        android:textColor="@color/black"
+        android:background="@drawable/signup_style"
+        android:textSize="20dp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CheckAttendance"
+        app:layout_constraintVertical_bias="0.084" />
+    <Button
+        android:id="@+id/Notice"
+        android:layout_width="247dp"
+
+        android:textColor="@color/black"
+        android:background="@drawable/signup_style"
+        android:textSize="20dp"
+        android:textStyle="bold|italic"
+        android:layout_height="74dp"
+        android:text="Notice"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ClassPerformation"
+        app:layout_constraintVertical_bias="0.084" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="195dp"
+        android:layout_height="131dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.444"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Showname"
+        app:layout_constraintVertical_bias="0.059"
+        app:srcCompat="@drawable/fui_ic_anonymous_white_24dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
