@@ -16,6 +16,7 @@ import android.widget.ImageButton;
 import android.widget.Toast;
 
 import com.bumptech.glide.load.model.Model;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -27,11 +28,11 @@ import java.util.ArrayList;
 public class Student_list extends AppCompatActivity {
 
     RecyclerView recyclerView;
-FirebaseDatabase db=FirebaseDatabase.getInstance();
-DatabaseReference reference;
-Adapter adapter;
-ArrayList<St_model> list;
-ImageButton delete_btn;
+    FirebaseDatabase db=FirebaseDatabase.getInstance();
+    DatabaseReference reference;
+    Adapter adapter;
+    ArrayList<St_model> list;
+   FloatingActionButton delete_btn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,14 +45,15 @@ ImageButton delete_btn;
 
         Intent i=getIntent();
         String college_name=i.getStringExtra("college_name");
-        delete_btn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-//                reference=db.getReference().child(college_name).child("Student Name");
-//  reference.removeValue();
-                Log.d("TAG",college_name);
-            }
-        });
+//        delete_btn.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//
+////                reference=db.getReference().child(college_name).child("Student Name");
+////
+////                Log.d("TAG",college_name);
+//            }
+//        });
        // String college_name=getIntent().getStringExtra("college_name");
 
         reference=db.getReference().child(college_name).child("Student Name");
@@ -67,6 +69,8 @@ ImageButton delete_btn;
                for(DataSnapshot dataSnapshot:snapshot.getChildren()) {
                    St_model Model = dataSnapshot.getValue(St_model.class);
                    list.add(Model);
+                   Log.d("id",Model.getName());
+
                }
                adapter.notifyDataSetChanged();
 

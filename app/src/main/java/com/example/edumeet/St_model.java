@@ -1,5 +1,7 @@
 package com.example.edumeet;
 
+import java.util.Objects;
+
 public class St_model {
     String Name,Id,DOB;
 
@@ -34,5 +36,18 @@ public class St_model {
     }
 
     public St_model() {
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof St_model)) return false;
+        St_model st_model = (St_model) o;
+        return Objects.equals(getName(), st_model.getName()) && Objects.equals(getId(), st_model.getId()) && Objects.equals(getDOB(), st_model.getDOB());
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(getName(), getId(), getDOB());
     }
 }

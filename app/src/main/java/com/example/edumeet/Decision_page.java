@@ -6,12 +6,13 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 
 import com.google.firebase.auth.FirebaseAuth;
 
 public class Decision_page extends AppCompatActivity {
 Button Teacher,Student,College;
-
+ImageButton button;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,7 +23,7 @@ Button Teacher,Student,College;
         Student=findViewById(R.id.student);
         Teacher=findViewById(R.id.Teacher);
         College=findViewById(R.id.College);
-
+button=findViewById(R.id.logout);
         College.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -33,13 +34,20 @@ Button Teacher,Student,College;
          Student.setOnClickListener(new View.OnClickListener() {
              @Override
              public void onClick(View view) {
-               startActivity(new Intent(Decision_page.this,Student_verification.class));
+                 startActivity(new Intent(Decision_page.this,Student_verification.class));
              }
          });
          Teacher.setOnClickListener(new View.OnClickListener() {
              @Override
              public void onClick(View view) {
                  startActivity(new Intent(Decision_page.this,Teacher_verificatoin.class));
+             }
+         });
+         button.setOnClickListener(new View.OnClickListener() {
+             @Override
+             public void onClick(View view) {
+                 FirebaseAuth.getInstance().signOut();
+                 startActivity(new Intent(Decision_page.this,Login_page.class));
              }
          });
     }

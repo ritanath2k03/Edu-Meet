@@ -95,16 +95,7 @@ android:textColor="@color/black"
                 android:textSize="24dp"
                 android:textStyle="bold|italic" />
 
-            <Button
-                android:id="@+id/createBtn"
-                android:layout_width="290dp"
-                android:layout_height="50dp"
-                android:layout_marginTop="30dp"
-                android:background="@drawable/signup_style"
-                android:text="Have an account"
-                android:textColor="@color/black"
-                android:textSize="24dp"
-                android:textStyle="bold|italic" />
+
 
         </LinearLayout>
     </ScrollView>

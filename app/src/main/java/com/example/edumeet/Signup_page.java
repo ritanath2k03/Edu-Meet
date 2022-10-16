@@ -60,11 +60,6 @@ public class Signup_page extends AppCompatActivity {
                 });
             }
         });
-        createBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(Signup_page.this,Login_page.class));
-            }
-        });
+
     }
 }

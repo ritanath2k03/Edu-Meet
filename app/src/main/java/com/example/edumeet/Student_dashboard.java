@@ -35,14 +35,13 @@ Dialog mydialog;
         showname = findViewById(R.id.Showname);
         Join = findViewById(R.id.Join);
 //        check_attendance = findViewById(R.id.CheckAttendance);
-mydialog=new Dialog(this);
+        mydialog = new Dialog(this);
 
-        Intent intent = getIntent();
-        String getText = intent.getStringExtra(Student_verification.Extra_name);
+        String getText = getIntent().getStringExtra("keyname");
         showname.setText("Hi " + getText + "\nWelcome to your page");
 
         URL serverUrl;
-        Url1=findViewById(R.id.Url);
+        Url1 = findViewById(R.id.Url);
         try {
             // object creation of JitsiMeetConferenceOptions
             // class by the name of options
@@ -64,7 +63,6 @@ mydialog=new Dialog(this);
     @Override
     public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults)
         {
-
             super.onRequestPermissionsResult(requestCode, permissions, grantResults);
             if (requestCode == 1) {
                 if (grantResults[0] == PackageManager.PERMISSION_GRANTED) {
@@ -75,7 +73,7 @@ mydialog=new Dialog(this);
                         .build();
                 JitsiMeetActivity.launch(this, options);
 
-            } else {
+            }else {
                 Toast.makeText(this, "Camera Permission Decline", Toast.LENGTH_SHORT).show();
             }
 

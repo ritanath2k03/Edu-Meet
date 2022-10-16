@@ -13,6 +13,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.EDUMeet">
         <activity
+            android:name=".College_List"
+            android:exported="false" />
+        <activity
+            android:name=".Create_college"
+            android:exported="false" />
+        <activity
             android:name=".Attendance_popup"
             android:exported="false" />
         <activity
@@ -30,6 +36,9 @@
         <activity
             android:name=".College_dashboard_main"
             android:exported="false" />
+
+
+
         <activity
             android:name=".Student_list"
             android:exported="false" />

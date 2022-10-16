@@ -11,7 +11,7 @@
         android:id="@+id/textView7"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Enter College Credentials"
+        android:text="Create College Credentials"
         android:textColor="@color/black"
         android:textSize="30dp"
 
@@ -36,21 +36,6 @@
         app:layout_constraintTop_toBottomOf="@+id/college_password"
         app:layout_constraintVertical_bias="0.266" />
 
-    <Button
-        android:id="@+id/createBtn"
-        android:layout_width="292dp"
-        android:layout_height="wrap_content"
-        android:background="@drawable/lognin_style"
-        android:text="Create an College"
-        android:textSize="24dp"
-        android:textStyle="bold|italic"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/college_enter"
-        app:layout_constraintVertical_bias="0.348" />
-
 
 
     <EditText
@@ -73,7 +58,7 @@
         android:layout_height="60dp"
         android:background="@drawable/edittext_bar"
         android:hint="College Id"
-        android:inputType="number"
+        android:inputType="textEmailAddress"
         android:textColorHint="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

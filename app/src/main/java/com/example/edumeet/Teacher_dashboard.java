@@ -30,7 +30,7 @@ Button Join,take_attendance;
         showname=findViewById(R.id.Showname);
         Join = findViewById(R.id.Join);
         take_attendance = findViewById(R.id.TakeAttendance);
-        String college_name=getIntent().getStringExtra("teacher_name");
+        String college_name=getIntent().getStringExtra("keyname");
         showname.setText("Hi "+college_name+"\nWelcome To Your Page");
 
             Url1=findViewById(R.id.Url);

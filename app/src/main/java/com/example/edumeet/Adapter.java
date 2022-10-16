@@ -61,5 +61,4 @@ St_model model=arrayList.get(position);
         }
     }
 
-
 }

@@ -67,14 +67,13 @@
 
     <ImageView
         android:id="@+id/imageView8"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="293dp"
+        android:layout_height="230dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Showname"
-        app:layout_constraintVertical_bias="0.111"
-        app:srcCompat="@drawable/teacher1" />
+        app:layout_constraintVertical_bias="0.041"
+        app:srcCompat="@drawable/teacher" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -6,7 +6,9 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
+import android.provider.ContactsContract;
 import android.util.Log;
+import android.view.View;
 
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -16,36 +18,35 @@ import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
 
-public class Registered_teacher_name extends AppCompatActivity {
-    RecyclerView recyclerView;
-    FirebaseDatabase db=FirebaseDatabase.getInstance();
-    DatabaseReference reference;
-    Teacher_Adapter adapter1;
-    ArrayList<Teacher_Model> list1;
+public class College_List extends AppCompatActivity {
+RecyclerView recyclerView;
+FirebaseDatabase db=FirebaseDatabase.getInstance();
+DatabaseReference reference;
+College_Adapter adapter;
+ArrayList<College_Model> list;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_registered_teacher_name);
+        setContentView(R.layout.activity_college_list);
         recyclerView=findViewById(R.id.recyclerView);
-
         String college_name=getIntent().getStringExtra("college_name");
 
-        reference=db.getReference().child(college_name).child("Teacher Name");
+        View view =getLayoutInflater().inflate(R.layout.college_layout,null);
+        reference=db.getReference().child(college_name);
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
-        list1=new ArrayList<>();
-        adapter1= new Teacher_Adapter(list1,this);
-        recyclerView.setAdapter(adapter1);
-
+        list=new ArrayList<>();
+        adapter=new College_Adapter(list,this);
+        recyclerView.setAdapter(adapter);
         reference.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 for(DataSnapshot dataSnapshot:snapshot.getChildren()){
-                    Teacher_Model Model1=dataSnapshot.getValue(Teacher_Model.class);
-                    list1.add(Model1);
+                    College_Model Model=dataSnapshot.getValue(College_Model.class);
+                    list.add(Model);
                     Log.d("child", "onChildAdded:" + dataSnapshot.getKey());
                 }
-                adapter1.notifyDataSetChanged();
+                adapter.notifyDataSetChanged();
             }
 
             @Override

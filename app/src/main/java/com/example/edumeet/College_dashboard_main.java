@@ -10,7 +10,7 @@ import android.widget.TextView;
 
 public class College_dashboard_main extends AppCompatActivity {
 TextView college_header1;
-Button register_a_student,register_a_teacher,registered_student,registered_teacher;
+Button register_a_student,register_a_teacher,registered_student,registered_teacher,college_list;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,10 +21,19 @@ Button register_a_student,register_a_teacher,registered_student,registered_teach
         register_a_teacher=findViewById(R.id.register_a_teacher);
         registered_student=findViewById(R.id.registered_student);
         registered_teacher=findViewById(R.id.registered_teacher);
-
+        college_list=findViewById(R.id.college_name);
         String college_name=getIntent().getStringExtra("keyname");
         college_header1.setText("Welcome to "+college_name+" college");
 
+        college_list.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(College_dashboard_main.this,College_List.class);
+                intent.putExtra("college_name",college_name);
+                startActivity(new Intent(intent));
+               // startActivity(new Intent(College_dashboard_main.this,College_List.class));
+            }
+        });
         register_a_student.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

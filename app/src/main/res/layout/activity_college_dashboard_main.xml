@@ -15,14 +15,15 @@
         android:text=""
         android:textColor="@color/black"
         android:textSize="30dp"
+
         android:textStyle="bold|italic"
 
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.184"
+        app:layout_constraintHorizontal_bias="0.15"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.146" />
+        app:layout_constraintVertical_bias="0.054" />
 
     <Button
         android:id="@+id/register_a_student"
@@ -98,6 +99,38 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/college_header1"
-        app:layout_constraintVertical_bias="0.244" />
+        app:layout_constraintVertical_bias="0.45" />
+
+    <Button
+
+        android:id="@+id/college_name"
+        android:layout_width="wrap_content"
+        android:layout_height="74dp"
+        android:layout_marginLeft="5dp"
+        android:background="@drawable/signup_style"
+        android:text="Security"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+android:padding="10dp"
+        android:textStyle="bold|italic"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/college_header1"
+        app:layout_constraintVertical_bias="0.451" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="312dp"
+        android:layout_height="135dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/college_header1"
+        app:layout_constraintVertical_bias="0.076"
+        app:srcCompat="@drawable/collegepic" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
